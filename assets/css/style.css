@@ -15,6 +15,8 @@ header {
 
 /* NAVBAR */
 #navbar {
+  font-family: "Spectral", serif;
+  background-color: #ffc017;
   width: 100%;
   display: flex;
   justify-content: space-around;
@@ -97,6 +99,7 @@ header {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 30px;
   margin-bottom: 2em;
 }
 hr {
@@ -263,4 +266,15 @@ article {
 .discover a {
   text-decoration: none;
   color: rgba(128, 128, 128);
+}
+.endlist li {
+  border: none;
+}
+
+/* header sticky */
+#navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
