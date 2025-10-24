@@ -6,8 +6,8 @@ body {
 /* HEADER */
 header {
   display: flex;
-  flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #ffc017;
   font-family: "Spectral", serif;
   border-bottom: 1px solid;
@@ -50,6 +50,9 @@ header {
 }
 
 /* STAY CURIOUS */
+#staycurious svg {
+  width: 10%;
+}
 #staycurious {
   font-size: 2em;
   margin: 1.5em 4em;
@@ -99,7 +102,6 @@ header {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 30px;
   margin-bottom: 2em;
 }
 hr {
@@ -277,4 +279,9 @@ article {
   top: 0;
   z-index: 1000;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+  background-color: #333333;
+  cursor: pointer;
 }
