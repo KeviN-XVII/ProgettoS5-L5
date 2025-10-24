@@ -50,9 +50,6 @@ header {
 }
 
 /* STAY CURIOUS */
-#staycurious svg {
-  width: 10%;
-}
 #staycurious {
   font-size: 2em;
   margin: 1.5em 4em;
@@ -175,7 +172,7 @@ article {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 60%;
+  width: 85%;
   margin-bottom: 3.5em;
 }
 
