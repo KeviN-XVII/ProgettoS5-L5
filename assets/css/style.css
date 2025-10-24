@@ -8,9 +8,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   background-color: #ffc017;
   font-family: "Spectral", serif;
+  border-bottom: 1px solid;
 }
 
 /* NAVBAR */
@@ -27,7 +27,7 @@ header {
 #navbar a {
   text-decoration: none;
   color: black;
-  font-weight: bold;
+  font-weight: 600;
 }
 #navbar ul {
   display: flex;
@@ -42,32 +42,43 @@ header {
   border-radius: 30px;
   background-color: black;
   color: white;
-  margin-left: 10px;
+  margin-left: 12px;
+  font-weight: 600;
+  font-size: 0.7em;
 }
 
 /* STAY CURIOUS */
 #staycurious {
   font-size: 2em;
-  margin: 0.5em 0;
+  margin: 1.5em 4em;
+}
+#staycurious h1 {
+  font-family: "Spectral";
+  font-size: 4em;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+#staycurious p {
+  margin-bottom: 30px;
 }
 
 #staycurious button {
-  padding: 9px 22px;
+  margin-top: 30px;
+  font-size: 0.6em;
+  padding: 8px 50px;
   border-radius: 30px;
   background-color: black;
   color: white;
 }
 /* MAIN */
 main {
-  width: 80%;
-  margin: 2em auto;
+  margin: 2em 5em;
 }
 /* TEXT TRENDING */
 .text-trending {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin: 0.5em 0;
 }
 .text-trending p {
   font-size: 13px;
@@ -82,10 +93,10 @@ main {
 .trending {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  margin: 2em 0;
+  margin-bottom: 2em;
 }
 .cards-container {
   display: flex;
@@ -93,7 +104,7 @@ main {
   justify-content: flex-start;
   padding: 0 40px;
 
-  width: 400px;
+  width: 25%;
   margin-bottom: 2em;
   border-radius: 10px;
   overflow: hidden;
@@ -108,8 +119,8 @@ main {
 }
 /* titolo card */
 .card h4 {
-  font-size: 17px;
-  font-weight: 600;
+  font-size: 15px;
+  font-weight: 700;
 }
 /* user card */
 .user {
@@ -119,7 +130,7 @@ main {
   margin: 16px 0px;
 }
 .user img {
-  width: 30px;
+  width: 25px;
   border-radius: 20px;
   margin-right: 8px;
 }
@@ -128,8 +139,25 @@ main {
   font-weight: 500;
 }
 
+/* date time */
+.time {
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  color: gray;
+}
+.time img {
+  margin-left: 6px;
+}
+
 /* article */
 article {
+  display: flex;
+}
+.allarticle {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
 }
 .article-container {
   display: flex;
@@ -137,17 +165,35 @@ article {
   justify-content: space-between;
   width: 60%;
   overflow: hidden;
-  margin: auto;
+  margin-bottom: 30px;
 }
 
 .text-article {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-right: 30px;
   flex: 1;
 }
 .img-article {
   flex-shrink: 0;
-  width: 120px;
-  height: 120px;
+  width: 210px;
+  height: 140px;
+}
+.img-article img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* user article */
+.userA {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.userA img {
+  width: 30px;
+  border-radius: 20px;
+  margin-right: 8px;
 }
