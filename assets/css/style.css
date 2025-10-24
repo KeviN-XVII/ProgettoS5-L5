@@ -71,9 +71,7 @@ header {
   color: white;
 }
 /* MAIN */
-main {
-  margin: 2em 5em;
-}
+
 /* TEXT TRENDING */
 .text-trending {
   display: flex;
@@ -90,6 +88,9 @@ main {
 }
 
 /* CARD  */
+.allsection {
+  margin: 0 5em;
+}
 .trending {
   display: flex;
   flex-direction: row;
@@ -97,6 +98,11 @@ main {
   align-items: center;
   flex-wrap: wrap;
   margin-bottom: 2em;
+}
+hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin: 20px 0;
 }
 .cards-container {
   display: flex;
@@ -153,6 +159,7 @@ main {
 /* article */
 article {
   display: flex;
+  margin: 0 5em;
 }
 .allarticle {
   display: flex;
@@ -164,8 +171,7 @@ article {
   align-items: center;
   justify-content: space-between;
   width: 60%;
-  overflow: hidden;
-  margin-bottom: 30px;
+  margin-bottom: 3.5em;
 }
 
 .text-article {
@@ -175,6 +181,21 @@ article {
   margin-right: 30px;
   flex: 1;
 }
+/* testi css */
+.text-article h4 {
+  font-size: 1em;
+  font-weight: 500;
+}
+.text-article h3 {
+  font-size: 1.8em;
+  margin-bottom: 12px;
+}
+.text-article p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: gray;
+}
+/* immagine */
 .img-article {
   flex-shrink: 0;
   width: 210px;
@@ -196,4 +217,50 @@ article {
   width: 30px;
   border-radius: 20px;
   margin-right: 8px;
+}
+
+.datepost {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: gray;
+}
+.datepost span {
+  background-color: rgba(211, 211, 211, 0.808);
+  padding: 3px 7px;
+  border-radius: 15px;
+  margin-left: 10px;
+}
+
+/* discover  */
+.discover {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+}
+.discover h3 {
+  font-size: 0.6em;
+  margin-bottom: 20px;
+}
+.discover ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+}
+.discover li {
+  list-style: none;
+  border: 0.6px solid rgba(128, 128, 128, 0.658);
+  padding: 8px 5px;
+  margin: 10px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.discover li:hover {
+  background-color: rgba(128, 128, 128, 0.158);
+}
+.discover a {
+  text-decoration: none;
+  color: rgba(128, 128, 128);
 }
