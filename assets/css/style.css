@@ -1,0 +1,153 @@
+body {
+  display: flex;
+  flex-direction: column;
+  font-family: "Roboto", sans-serif;
+}
+/* HEADER */
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffc017;
+  font-family: "Spectral", serif;
+}
+
+/* NAVBAR */
+#navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+  border-bottom: 1px solid black;
+}
+#navbar img {
+  padding-left: 10px;
+}
+#navbar a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+#navbar ul {
+  display: flex;
+  align-items: center;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 0.7em;
+}
+#navbar button {
+  padding: 9px 22px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  margin-left: 10px;
+}
+
+/* STAY CURIOUS */
+#staycurious {
+  font-size: 2em;
+  margin: 0.5em 0;
+}
+
+#staycurious button {
+  padding: 9px 22px;
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+}
+/* MAIN */
+main {
+  width: 80%;
+  margin: 2em auto;
+}
+/* TEXT TRENDING */
+.text-trending {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 0.5em 0;
+}
+.text-trending p {
+  font-size: 13px;
+  font-weight: bold;
+}
+.text-trending img {
+  width: 30px;
+  margin-right: 8px;
+}
+
+/* CARD  */
+.trending {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 2em 0;
+}
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  padding: 0 40px;
+
+  width: 400px;
+  margin-bottom: 2em;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.cards-container h3 {
+  font-size: 2.2em;
+  margin: 18px 20px;
+  color: #80808061;
+}
+.card {
+  margin-top: 8px;
+}
+/* titolo card */
+.card h4 {
+  font-size: 17px;
+  font-weight: 600;
+}
+/* user card */
+.user {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 16px 0px;
+}
+.user img {
+  width: 30px;
+  border-radius: 20px;
+  margin-right: 8px;
+}
+.user p {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* article */
+article {
+}
+.article-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 60%;
+  overflow: hidden;
+  margin: auto;
+}
+
+.text-article {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1;
+}
+.img-article {
+  flex-shrink: 0;
+  width: 120px;
+  height: 120px;
+}
